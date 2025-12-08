@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phung Huu Long - AI Engineer (Computer Vision)</title>
+    <title>Phung Huu Long - AI Engineer</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -25,7 +26,7 @@
             max-width: 1200px;
             margin: 20px auto;
             background: white;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             overflow: hidden;
         }
@@ -45,19 +46,24 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 2px,
-                rgba(255,255,255,0.03) 2px,
-                rgba(255,255,255,0.03) 4px
-            );
+            background: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(255, 255, 255, 0.03) 2px,
+                    rgba(255, 255, 255, 0.03) 4px);
             animation: float 20s ease-in-out infinite;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateX(0px) translateY(0px); }
-            50% { transform: translateX(-20px) translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateX(0px) translateY(0px);
+            }
+
+            50% {
+                transform: translateX(-20px) translateY(-20px);
+            }
         }
 
         .header-content {
@@ -77,8 +83,8 @@
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            border: 5px solid rgba(255,255,255,0.2);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             margin: 0 auto 15px;
             position: relative;
@@ -103,7 +109,7 @@
             font-size: 2.8em;
             font-weight: 700;
             margin-bottom: 8px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -131,7 +137,7 @@
             gap: 8px;
             font-size: 0.85em;
             padding: 8px 12px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             backdrop-filter: blur(10px);
             transition: transform 0.3s ease;
@@ -139,7 +145,7 @@
 
         .contact-item:hover {
             transform: translateY(-2px);
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
         }
 
         .main-content {
@@ -228,7 +234,7 @@
 
         .experience-item:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .job-header {
@@ -275,7 +281,7 @@
             padding: 20px;
             border-radius: 10px;
             border-left: 3px solid #ed8936;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .project-title {
@@ -359,7 +365,7 @@
             background: white;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
         }
 
         .skills-category h4 {
@@ -406,7 +412,7 @@
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 15px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
             border-left: 5px solid #48bb78;
         }
 
@@ -447,7 +453,7 @@
             padding: 12px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
         }
 
         .language-name {
@@ -470,23 +476,23 @@
             background: white;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
         }
 
         @media (max-width: 1024px) {
             .main-content {
                 grid-template-columns: 1fr;
             }
-            
+
             .header-content {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            
+
             .basic-info {
                 text-align: center;
             }
-            
+
             .contact-grid {
                 grid-template-columns: 1fr;
             }
@@ -497,29 +503,30 @@
                 margin: 10px;
                 border-radius: 15px;
             }
-            
+
             .header {
                 padding: 25px 15px;
             }
-            
+
             .avatar {
                 width: 130px;
                 height: 130px;
             }
-            
+
             .name {
                 font-size: 2.2em;
             }
-            
-            .sidebar, .content {
+
+            .sidebar,
+            .content {
                 padding: 25px 15px;
             }
-            
+
             .job-header {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .project-meta {
                 grid-template-columns: 1fr;
             }
@@ -529,13 +536,13 @@
             body {
                 background: white;
             }
-            
+
             .container {
                 box-shadow: none;
                 max-width: none;
                 margin: 0;
             }
-            
+
             .header {
                 background: #2d3748 !important;
                 -webkit-print-color-adjust: exact;
@@ -543,6 +550,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -554,15 +562,14 @@
                 </div>
                 <div class="basic-info">
                     <h1 class="name">PHUNG HUU LONG</h1>
-                    <p class="title">AI ENGINEER (COMPUTER VISION)</p>
-                    
+                    <p class="title">AI ENGINEER</p>
+
                     <div class="contact-grid">
                         <div class="contact-item">📧 phunglongtn@gmail.com</div>
                         <div class="contact-item">📱 (+84) 0375-769-686</div>
                         <div class="contact-item">🔗 fb.com/ChuVann</div>
-                        <div class="contact-item">💻 github.com/Long0307</div>
                         <div class="contact-item">📍 Hanoi, Vietnam</div>
-                        <div class="contact-item">🎯 Computer vision, Deep learning, Web developer</div>
+                        <div class="contact-item">🎯 Deep learning, Computer vision, Backend developer</div>
                     </div>
                 </div>
             </div>
@@ -572,7 +579,7 @@
             <aside class="sidebar">
                 <section class="section">
                     <h3 class="section-title">Technology Skills</h3>
-                    
+
                     <div class="skills-category">
                         <h4>Frontend</h4>
                         <div class="skills-list">
@@ -588,18 +595,10 @@
                     <div class="skills-category">
                         <h4>Backend</h4>
                         <div class="skills-list">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-category">
-                        <h4>Libraries and Frameworks for Web project</h4>
-                        <div class="skills-list">
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">JavaScript (ExpressJS)</span>
+                            <span class="skill-tag">Python (Django, Flask, FastAPI)</span>
+                            <span class="skill-tag">Java (Spring Boot, Spark)</span>
+                            <span class="skill-tag">PHP (Laravel)</span>
                         </div>
                     </div>
 
@@ -609,6 +608,8 @@
                             <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">SQL Server</span>
                             <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">S3</span>
                         </div>
                     </div>
 
@@ -618,6 +619,8 @@
                             <span class="skill-tag">Keras</span>
                             <span class="skill-tag">PyTorch</span>
                             <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Flitz</span>
                         </div>
                     </div>
 
@@ -628,15 +631,15 @@
                             <span class="skill-tag">GitHub</span>
                             <span class="skill-tag">Linux (Ubuntu/CentOS)</span>
                             <span class="skill-tag">Nginx</span>
+                            <span class="skill-tag">Apache Airflow</span>
                         </div>
                     </div>
                 </section>
 
                 <section class="section">
                     <h3 class="section-title">Education</h3>
-                    
                     <div class="education-item">
-                        <div class="degree">Artificial Intelligence - UOU</div>
+                        <div class="degree">Master's degree in Artificial Intelligence</div>
                         <div class="school">University of Ulsan</div>
                         <div class="education-duration">2023 - 2025</div>
                         <div class="gpa">GPA: 3.5/4.5</div>
@@ -654,7 +657,7 @@
                     <h3 class="section-title">Language</h3>
                     <div class="language-item">
                         <span class="language-name">English</span>
-                        <span class="language-level">IELTS 5.5</span>
+                        <span class="language-level">IELTS 6.5</span>
                     </div>
                 </section>
 
@@ -670,23 +673,190 @@
                 <section class="section">
                     <h3 class="section-title">Career Objective</h3>
                     <div class="objective">
-                        PHUNG HUU LONG received a Bachelor of Engineering in Software Engineering from Ha Noi University of Business and Technology, Vietnam (2022), and a Master's degree in Artificial Intelligence from the University of Ulsan, South Korea (2025). He worked as an AI Researcher at TOSY Robotics JSC, Ha Noi, Vietnam, and later as an AI Engineer at HTWAVE Technology Co., Ltd, Ulsan, South Korea. His research interests focus on object detection and deep learning in computer vision using machine learning techniques.
+                        PHUNG HUU LONG received a Bachelor of Engineering in Software Engineering from Ha Noi University
+                        of Business and Technology, Vietnam (2022), and a Master’s degree in Artificial Intelligence
+                        from the University of Ulsan, South Korea (2025).
+                        He has worked as an AI Researcher at TOSY Robotics JSC in Ha Noi, Vietnam, and as an AI Engineer
+                        at HTWAVE Technology Co., Ltd in Ulsan, South Korea.
+                        He possesses a strong foundation in deep learning, and optimization algorithms (gradient-based,
+                        heuristic, and combinatorial). With hands-on experience in computer vision and IoT applications,
+                        he focuses on deploying AI models from prototype to production with an emphasis on performance
+                        and scalability. Currently, He is working at MB Bank (Onsite) for several BigData projects combining with AI 
+                        tools like PaddleOCR, VietOCR, LLM (Gemini, GPT-4). Simultaneously, He is also making some NLP project such us chatbot system 
+                        using RAG (Retrieval-Augmented Generation).
                     </div>
                 </section>
 
                 <section class="section">
                     <h3 class="section-title">Work Experience</h3>
+                        <div class="experience-item">
+                            <div class="job-header">
+                                <div>
+                                    <div class="job-title">MIDDLE AI ENGINEER</div>
+                                    <div class="company">Evotek Vietnam</div>
+                                    <div class="location">Address: 2QHJ+VGQ Kim Hoan Building, No. 19 Duy Tan Ward, My Dinh, Cau Giay, Hanoi</div>
+                                </div>
+                                <div class="duration">6/2025 - Current</div>
+                            </div>
+                            <div class="project">
+                                <div class="project-title">EvoAI Chatbot</div>
+                                <div class="project-meta">
+                                    <div class="meta-item">
+                                        <div class="meta-label">Team size: 4</div>
+                                    </div>
+                                </div>
+                                <strong>TECHNOLOGIES:</strong> Python, FastAPI, K3s, MongoDB, MinIO, Milvus, Triton Server</p>
+                                <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                                <div class="description">
+                                    <ul>
+                                        <li>Designed and deployed an internal chatbot system based on the RAG (Retrieval-Augmented Generation)
+                                            architecture, supporting employees in querying company policies and regulations.</li>
+                                        <li>Deployed infrastructure with K3s; integrated MongoDB, MinIO, Milvus, and Triton Server.</li>
+                                        <li>Built modules: chunking, embedding, retrieval, and QA.</li>
+                                        <li>Developed backend services (FastAPI), integrated with frontend.</li>
+                                        <li>Achieved average of 2,000+ queries/day with ~800ms response time.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">DEV AI ENGINEER</div>
+                                <div class="company">MB Bank(Onsite)</div>
+                                <div class="location">Address: HUD Tower, 37 Le Van Luong Street, Nhan Chinh, Thanh Xuan, Hanoi 10000</div>
+                            </div>
+                            <div class="duration">7/2025 - Current</div>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">Early Risk Detection System</div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <div class="meta-label">Team size: 8</div>
+                                </div>
+                            </div>
+                            <strong>TECHNOLOGIES:</strong>Python(FLASK), ORACLE, S3, Spark, JavaScript(three.js, 3d force graph), Airflow, Gitlab.</p>
+                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                            <div class="description">
+                                <ul>
+                                    <li>Built a service to calculate risk points based on MBBank databases using ORABLE, S3 and Spark</li>
+                                    <li>Using Python (Flask) to integrate with results of ORACLE and show graphs by javascript.</li>
+                                    <li>This system used Spark and S3 that optimize the speed of caculating data (Achieved average of 100.000.000 queries for 8 hours)</li>
+                                    <li>Airflow is used for scheduling task of calculating 100.000.000 queries every day.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">OCR documents for MB Bank departments</div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <div class="meta-label">Team size: 6</div>
+                                </div>
+                            </div>
+                            <strong>TECHNOLOGIES:</strong>Python(FLASK, Flitz, SMTP, PANDAS), VietOCR, Airflow, Gitlab.</p>
+                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                            <div class="description">
+                                <ul>
+                                    <li>Use Flitz to detect text PDF files and use VietOCR to detect image PDF files in which 90% (printed text), 5% (digital signature and handwritten signature), 5% images.</li>
+                                    <li>Using Python (Flask) to integrate with results of ORACLE where.</li>
+                                    <li>Airflow is used for scheduling task of extracting data from PDF and Excel every day.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">Crawling tools.</div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <div class="meta-label">Team size: 4</div>
+                                </div>
+                            </div>
+                            <strong>TECHNOLOGIES:</strong>Python(FLASK, Selenium), Gitlab, LLM (ChatGPT API token), HTML, CSS, JS.</p>
+                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                            <div class="description">
+                                <ul>
+                                    <li>Use LLM (ChatGPT API token) to detect characters in images that pass non-robot security.</li>
+                                    <li>Using Python (Flask) to integrate with results of ORACLE.</li>
+                                    <li>HTML, CSS and JS used to code templates.</li>
+                                    <li>Selenium is to crawl the data of text and images.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">OCR for Financial Documents</div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <div class="meta-label">Team size: 4</div>
+                                </div>
+                            </div>
+                            <strong>TECHNOLOGIES:</strong> Python, YOLOv5, VietOCR, OpenCV, FastAPI</p>
+                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                            <div class="description">
+                                <ul>
+                                    <li>Built a service to extract data and verify signer roles on documents such as payment orders, checks, etc.</li>
+                                    <li>Used YOLOv5 to detect fields and signature areas.</li>
+                                    <li>Used VietOCR for text recognition.</li>
+                                    <li>OCR accuracy: 95% (printed text), 80% (handwriting); 98% signer role matching accuracy.</li>
+                                    <li>Reduced data entry workload by 80%.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">OCR for Vehicle Documents</div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <div class="meta-label">Team size: 4</div>
+                                </div>
+                            </div>
+                            <strong>TECHNOLOGIES:</strong> Python, PyTorch, SRFormer, PARSeq, YOLOv10, FastAPI</p>
+                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                            <div class="description">
+                                <ul>
+                                    <li>Used YOLOv10 for template separation, SRFormer for text detection, and PARSeq for text recognition.</li>
+                                    <li>Developed geolayout-based information extraction (e.g., license plate, chassis number, engine number, vehicle type).</li>
+                                    <li>Achieved 98% average accuracy across key fields, with 3s processing time per request.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="experience-item">
                         <div class="job-header">
                             <div>
                                 <div class="job-title">AI ENGINEER</div>
                                 <div class="company">HTWAVE Technology Co., Ltd</div>
-                                <div class="location">Address: 44610 Engr, Bldg. 7-201, Daehack-Ro 93, Nam-gu, Ulsan, Korea</div>
+                                <div class="location">Address: 44610 Engr, Bldg. 7-201, Daehack-Ro 93, Nam-gu, Ulsan,
+                                    Korea</div>
                             </div>
                             <div class="duration">8/2023 - Current</div>
                         </div>
-                        
+                        <div class="project">
+                            <div class="project-title">WIND PREDICTION USING LORA TECHNOLOGY (IOT PROJECT)</div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <div class="meta-label">Team size: 5</div>
+                                </div>
+                            </div>
+                            <p><strong>TECHNOLOGIES:</strong> JAVA SPRING BOOT, PYTHON, CRON JOB, WEBSOCKET, REST API,
+                                MYSQL, HTML, CSS, JavaScript, Ubuntu Server, Nginx.</p>
+                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                            <div class="description">
+                                <ul>
+                                    <li>I have built a wind data processing system using Java Spring Boot that can
+                                        predict wind direction and wind speed. </li>
+                                    <li>Our algorithm allow to optimize the processing flow of more than 1 million
+                                        records/day (), increase processing speed by 90% using Data Modeling techniques
+                                        and measure by FPS.</li>
+                                    <li>Developing Wind prediction system by Java Spring Boot and Python (Flask)</li>
+                                    <li>Handling wind datasets with tabular data using MySQL, SQL Server, and CSV/Excel
+                                        formats for preprocessing.</li>
+                                    <li>Using SSH technique to gather data from database of other areas.</li>
+                                    <li>Built the wind prediction system by Flask and deployed on the servers (using
+                                        Ubuntu and Nginx).</li>
+                                    <li>Integrated dashboard and API for data monitoring.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <div class="project">
                             <div class="project-title">The Forest Fire Detection System</div>
                             <div class="project-meta">
@@ -694,21 +864,20 @@
                                     <div class="meta-label">Team size: 5</div>
                                 </div>
                             </div>
-                            <p><strong>DATASETS:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>The High Performance Wireless Research and Education Network (HPWREN) Dataset</li>
-                                    <li>FireSpot: A Database for Smoke Detection in Early-stage Wildfires.</li>
-                                    <li>Our custom datasets</li>
-                                </ul>
-                            </div>
-                            <p><strong>TECHNOLOGIES:</strong> PYTHON, FLASK, OPENCV, TensorRT, ONNX Runtime, WEBSOCKET, REST API, MYSQL, YOLOv5, HTML, CSS, JavaScript, Ubuntu Server, Nginx, Docker and Docker compose.</p>
+                            <p><strong>TECHNOLOGIES:</strong> PYTHON, FLASK, OPENCV, TensorRT, ONNX Runtime, WEBSOCKET,
+                                REST API, MYSQL, YOLOv5, HTML, CSS, JavaScript, Ubuntu Server, Nginx, Docker and Docker
+                                compose.</p>
                             <p><strong>KEY RESPONSIBILITIES:</strong></p>
                             <div class="description">
                                 <ul>
-                                    <li>Improving the forest fire detection system with YOLOv5 using Model Optimization and Transfer learning for higher accuracy than the original model.</li>
-                                    <li>The application of three techniques together (GHOSTNET, CBAM, INCEPTION MODULE, BIFPN) allow the model to improve mAP@0.5:0.95 by 3.2% (100 epochs) compared to the original YOLOv5s, while simultaneously reducing the number of parameters by approximately 7.14%.</li>
-                                    <li>The output of the forest fire detection system is inserted to database by mysql. This system is deployed on Ubuntu Server, Nginx, Docker and Docker compose.</li>
+                                    <li>Improving the forest fire detection system with YOLOv5 using Model Optimization
+                                        and Transfer learning for higher accuracy than the original model.</li>
+                                    <li>The application of three techniques together (GHOSTNET, CBAM, INCEPTION MODULE,
+                                        BIFPN) allow the model to improve mAP@0.5:0.95 by 3.2% (100 epochs) compared to
+                                        the original YOLOv5s, while simultaneously reducing the number of parameters by
+                                        approximately 7.14%.</li>
+                                    <li>The output of the forest fire detection system is inserted to database by mysql.
+                                        This system is deployed on Ubuntu Server, Nginx, Docker and Docker compose.</li>
                                 </ul>
                             </div>
                         </div>
@@ -720,131 +889,161 @@
                                     <div class="meta-label">Team size: 5</div>
                                 </div>
                             </div>
-                            <p><strong>DATASETS:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>Pontifical Catholic University of Parana+ dataset</li>
-                                    <li>Aerial View Parking Lot (AVPL) dataset</li>
-                                    <li>Car Parking Lot dataset</li>
-                                </ul>
-                            </div>
-                            <p><strong>TECHNOLOGIES:</strong> PYTHON, FLASK, TensorRT, ONNX Runtime, OPENCV, WEBSOCKET, REST API, MYSQL, YOLOv5, HTML, CSS, JavaScript, Ubuntu Server, Nginx, Docker and Docker compose.</p>
+                            <p><strong>TECHNOLOGIES:</strong> PYTHON, FLASK, TensorRT, ONNX Runtime, OPENCV, WEBSOCKET,
+                                REST API, MYSQL, YOLOv5, HTML, CSS, JavaScript, Ubuntu Server, Nginx, Docker and Docker
+                                compose.</p>
                             <p><strong>KEY RESPONSIBILITIES:</strong></p>
                             <div class="description">
                                 <ul>
-                                    <li>Improving the Smart Parking System with YOLOv5 using Model Optimization and Transfer learning for higher accuracy than the original model.</li>
-                                    <li>The application of three techniques together (GHOSTNET, Squeeze-and-Excitation Networks) allow the model to achieve 99.6% mAP on the valuation set</li>
-                                    <li>The above system reduces the number of parameters by 58.57% (300 epochs) and the inference time is reduced to 2.1 ms compared to the original model.</li>
-                                    <li>The output of this system is inserted to database by mysql. In addition, This system is deployed on Ubuntu Server, Nginx, Docker and Docker compose.</li>
-                                    <li>Converted PyTorch model to TensorRT engine with FP16 precision, boosting inference speed by 60% while maintaining accuracy within 0.5% mAP.</li>
-                                    <li>Implemented INT8 quantization for edge deployment, reducing model size from 13.2 MB to 3.5 MB.</li>
+                                    <li>Improving the Smart Parking System with YOLOv5 using Model Optimization and
+                                        Transfer learning for higher accuracy than the original model.</li>
+                                    <li>The application of three techniques together (GHOSTNET, Squeeze-and-Excitation
+                                        Networks) allow the model to achieve 99.6% mAP on the valuation set</li>
+                                    <li>The above system reduces the number of parameters by 58.57% (300 epochs) and the
+                                        inference time is reduced to 2.1 ms compared to the original model.</li>
+                                    <li>The output of this system is inserted to database by mysql. In addition, This
+                                        system is deployed on Ubuntu Server, Nginx, Docker and Docker compose.</li>
+                                    <li>Converted PyTorch model to TensorRT engine with FP16 precision, boosting
+                                        inference speed by 60% while maintaining accuracy within 0.5% mAP.</li>
+                                    <li>Implemented INT8 quantization for edge deployment, reducing model size from 13.2
+                                        MB to 3.5 MB.</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="project">
-                            <div class="project-title">Human Fall Detection for Smart Falling Detection Application</div>
+                            <div class="project-title">Human Fall Detection for Smart Falling Detection Application
+                            </div>
                             <div class="project-meta">
                                 <div class="meta-item">
                                     <div class="meta-label">Team size: 5</div>
                                 </div>
                             </div>
-                            <p><strong>DATASETS:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>COCO (Common Objects in Context) dataset</li>
-                                    <li>HumanParts dataset</li>
-                                    <li>People Detection Computer Vision Project (PDCVP) dataset</li>
-                                </ul>
-                            </div>
-                            <p><strong>TECHNOLOGIES:</strong> PYTHON, FLASK, OPENCV, WEBSOCKET, REST API, MYSQL, YOLOv5, HTML, CSS, JavaScript, Ubuntu Server, Nginx, Docker and Docker compose.</p>
+                            <p><strong>TECHNOLOGIES:</strong> PYTHON, FLASK, OPENCV, WEBSOCKET, REST API, MYSQL, YOLOv5,
+                                HTML, CSS, JavaScript, Ubuntu Server, Nginx, Docker and Docker compose.</p>
                             <p><strong>KEY RESPONSIBILITIES:</strong></p>
                             <div class="description">
                                 <ul>
-                                    <li>Improving the Smart Falling Detection system with YOLOv5 using Model Optimization and Transfer learning for higher accuracy than the original model.</li>
-                                    <li>The application of three techniques together (GHOSTNET, Squeeze-and-Excitation Networks) allow the model to achieve 98.8% mAP on the valuation set</li>
-                                    <li>The above system reduces the number of parameters by 58.57% (300 epochs) and the inference time is reduced to 1.8 ms compared to the original model.</li>
-                                    <li>The output of this system is inserted to database by mysql. In addition, This system is deployed on Ubuntu Server, Nginx, Docker and Docker compose.</li>
-                                    <li>Converted PyTorch model to TensorRT engine with FP16 precision, boosting inference speed by 60% while maintaining accuracy within 0.5% mAP.</li>
-                                    <li>Implemented INT8 quantization for edge deployment, reducing model size from 13.2 MB to 3.5 MB.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <div class="project-title">WIND PREDICTION USING LORA TECHNOLOGY (IOT PROJECT)</div>
-                            <div class="project-meta">
-                                <div class="meta-item">
-                                    <div class="meta-label">Team size: 5</div>
-                                </div>
-                            </div>
-                            <p><strong>DATASETS:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>OUR REAL DATA SETS ARE COLLECTED FROM FACTORIES AND SURROUNDING ENVIRONMENTS.</li>
-                                </ul>
-                            </div>
-                            <p><strong>TECHNOLOGIES:</strong> JAVA SPRING BOOT, PYTHON, CRON JOB, WEBSOCKET, REST API, MYSQL, HTML, CSS, JavaScript, Ubuntu Server, Nginx.</p>
-                            <p><strong>KEY RESPONSIBILITIES:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>I have built a wind data processing system using Java Spring Boot that can predict wind direction and wind speed. Our algorithm allow to optimize the processing flow of more than 1 million records/day, increase processing speed by 90% using Data Modeling techniques and measure by FPS.</li>
+                                    <li>Improving the Smart Falling Detection system with YOLOv5 using Model
+                                        Optimization and Transfer learning for higher accuracy than the original model.
+                                    </li>
+                                    <li>The application of three techniques together (GHOSTNET, Squeeze-and-Excitation
+                                        Networks) allow the model to achieve 98.8% mAP on the valuation set</li>
+                                    <li>The above system reduces the number of parameters by 58.57% (300 epochs) and the
+                                        inference time is reduced to 1.8 ms compared to the original model.</li>
+                                    <li>The output of this system is inserted to database by mysql. In addition, This
+                                        system is deployed on Ubuntu Server, Nginx, Docker and Docker compose.</li>
+                                    <li>Converted PyTorch model to TensorRT engine with FP16 precision, boosting
+                                        inference speed by 60% while maintaining accuracy within 0.5% mAP.</li>
+                                    <li>Implemented INT8 quantization for edge deployment, reducing model size from 13.2
+                                        MB to 3.5 MB.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
+                                            <div class="experience-item">
+                            <div class="job-header">
+                                <div>
+                                    <div class="job-title">AI researcher</div>
+                                    <div class="company">TOSY ROBOTICS JSC COMPANY (https://www.tosyrobotics.com/)</div>
+                                    <div class="location">Address: Starcity Building, 23 Le Van Luong, Thanh Xuan, Hanoi
+                                    </div>
+                                </div>
+                                <div class="duration">06/2022 – 08/2023</div>
+                            </div>
+
+                            <div class="project">
+                                <div class="project-title">Manufacturing Execution System projects by Django.</div>
+                                <div class="project-meta">
+                                    <div class="meta-item">
+                                        <div class="meta-label">Team size: 5</div>
+                                    </div>
+                                </div>
+                                <p><strong>TECHNOLOGIES:</strong> PYTHON, DJANGO, WEBSOCKET, YOLOv3, REST API, MYSQL, HTML,
+                                    CSS, JavaScript, Ubuntu Server, Nginx.</p>
+                                <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                                <div class="description">
+                                    <ul>
+                                        <li>Developed MES system using Apache Spark, Django to process real-time production
+                                            data.</li>
+                                        <li>Write pipeline with Spark Structured Streaming from MQTT/Kafka to analyze
+                                            technician operation logs and detect process deviations.</li>
+                                        <li>Write Spark Streaming jobs in Scala to collect and analyze device (sensor) data
+                                            from the production line.</li>
+                                        <li>YOLOv3 was applied to MES application to optimize the process of manufaturing.
+                                        </li>
+                                        <li>Dashboard is developed by Django to controll the data of manufaturing system.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="project-title">Robot project mimics human actions.</div>
+                                <div class="project-meta">
+                                    <div class="meta-item">
+                                        <div class="meta-label">Team size: 5</div>
+                                    </div>
+                                </div>
+                                <p><strong>TECHNOLOGIES:</strong> ROS2, ROBOTIS-OP3, PYTHON, WEBSOCKET, HTML, CSS,
+                                    JavaScript, Ubuntu SERVER.</p>
+                                <p><strong>KEY RESPONSIBILITIES:</strong></p>
+                                <div class="description">
+                                    <ul>
+                                        <li>USING YOLOv5 to detect the objects and using ROS2 to hold, grasp and grasp
+                                            objects. Or you can make the robot act according to your actions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     <div class="experience-item">
                         <div class="job-header">
                             <div>
-                                <div class="job-title">AI researcher</div>
-                                <div class="company">TOSY ROBOTICS JSC COMPANY (https://www.tosyrobotics.com/)</div>
-                                <div class="location">Address: Starcity Building, 23 Le Van Luong, Thanh Xuan, Hanoi</div>
+                                <div class="job-title">Nodejs Developer</div>
+                                <div class="company">NODEMY COMPANY (https://nodemy.vn/about/)</div>
+                                <div class="location">Address: Villa BT3, Lot AIV, Ha Dinh new urban area, Tan Trieu Commune, Thanh Tri District, Hanoi City, Vietnam
+                                </div>
                             </div>
-                            <div class="duration">06/2022 – 08/2023</div>
+                            <div class="duration">2022</div>
                         </div>
 
                         <div class="project">
-                            <div class="project-title">OBJECT DETECTING SYSTEM FROM THE COMPANY'S PRODUCT</div>
+                            <div class="project-title">Ecommerce website using Nodejs and Mongodb.</div>
                             <div class="project-meta">
                                 <div class="meta-item">
-                                    <div class="meta-label">Team size: 5</div>
+                                    <div class="meta-label">Team size: 4</div>
                                 </div>
                             </div>
-                            <p><strong>DATASETS:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>OUR REAL DATA SETS ARE COLLECTED FROM FACTORIES AND SURROUNDING ENVIRONMENTS.</li>
-                                </ul>
-                            </div>
-                            <p><strong>TECHNOLOGIES:</strong> PYTHON, WEBSOCKET, YOLOv3, REST API, MYSQL, HTML, CSS, JavaScript, Ubuntu Server, Nginx.</p>
+                            <p><strong>TECHNOLOGIES:</strong> NODEJS, EXPRESSJS, MONGODB, REACTJS (ANT DESIGN)</p>
                             <p><strong>KEY RESPONSIBILITIES:</strong></p>
                             <div class="description">
                                 <ul>
-                                    <li>YOLOv3 and PYTHON (FLASK) was applied to detect Amazon code and the company's products to optimize the process of manufaturing system.</li>
-                                    <li>The output of this system is inserted to mysql database.</li>
+                                    <li>Develop an e-commerce system to sell electronics using NOSQL (MongoDB).</li>
+                                    <li>REACTJS (ANT DESIGN) is to code front end template.</li>
+                                    <li>Nodejs is coding the functions in this e-commerce website and supports querying data in the database.</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="project">
-                            <div class="project-title">Robot project mimics human actions.</div>
+                            <div class="project-title">Course sales project</div>
                             <div class="project-meta">
                                 <div class="meta-item">
                                     <div class="meta-label">Team size: 5</div>
                                 </div>
                             </div>
-                            <p><strong>DATASETS:</strong></p>
-                            <div class="description">
-                                <ul>
-                                    <li>COCO DATASETS.</li>
-                                </ul>
-                            </div>
-                            <p><strong>TECHNOLOGIES:</strong> ROS2, ROBOTIS-OP3, PYTHON, WEBSOCKET, HTML, CSS, JavaScript, Ubuntu SERVER.</p>
+                            <p><strong>TECHNOLOGIES:</strong> NODEJS, EXPRESSJS, MONGODB, REACTJS (ANT DESIGN).</p>
                             <p><strong>KEY RESPONSIBILITIES:</strong></p>
                             <div class="description">
                                 <ul>
-                                    <li>USING YOLOv5 to detect the objects and using ROS2 to hold, grasp and grasp objects. Or you can make the robot act according to your actions.</li>
+                                    <li>Develop a course selling system to sell online courses based on NOSQL database (MongoDB).</li>
+                                    <li>REACTJS (ANT DESIGN) is to code front end template.</li>
+                                    <li>Nodejs is coding the functions in this course selling system and supports querying data in the database.</li>
                                 </ul>
                             </div>
                         </div>
-                        
+
+
+
+
+
