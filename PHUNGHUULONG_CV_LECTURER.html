@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - PHUNG HUU LONG - Senior Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3799;
+            --secondary: #4a69bd;
+            --accent: #f8c291;
+            --text: #2f3542;
+            --light-bg: #f1f2f6;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #dfe4ea; color: var(--text); line-height: 1.4; padding: 20px 0; }
+
+        .cv-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: var(--white);
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        /* SIDEBAR (30%) */
+        .sidebar { width: 30%; background: #2c3e50; color: var(--white); padding: 30px 20px; }
+        .sidebar h1 { font-size: 22px; text-transform: uppercase; margin-bottom: 5px; color: #3498db; }
+        .sidebar h2 { font-size: 13px; font-weight: 300; margin-bottom: 30px; opacity: 0.8; }
+        
+        .side-section { margin-bottom: 20px; }
+        .side-title { font-size: 13px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 5px; margin-bottom: 10px; color: #3498db; font-weight: 700; }
+        .info-item { font-size: 11px; margin-bottom: 6px; }
+
+        .skill-group { margin-bottom: 10px; }
+        .skill-name { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 2px; }
+        .level-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; }
+        .level-fill { height: 100%; background: #3498db; }
+
+        /* MAIN CONTENT (70%) */
+        .main-content { width: 70%; padding: 30px; }
+        .section-header { font-size: 15px; font-weight: 700; color: #2c3e50; text-transform: uppercase; border-left: 5px solid #3498db; padding-left: 10px; margin-bottom: 15px; background: #f8f9fa; padding-top: 5px; padding-bottom: 5px; }
+        
+        .summary { font-size: 11.5px; margin-bottom: 20px; text-align: justify; color: #444; border: 1px dashed #ccc; padding: 10px; }
+
+        .project-item { margin-bottom: 20px; page-break-inside: avoid; }
+        .project-meta { display: flex; justify-content: space-between; font-weight: 700; font-size: 13px; color: #111; }
+        .project-sub { font-size: 11px; color: #e67e22; font-weight: 700; margin: 2px 0; }
+        .tech-box { font-size: 10px; background: #f1f2f6; padding: 3px 6px; border-radius: 3px; display: inline-block; margin: 4px 0; color: #555; border: 1px solid #ddd; }
+        
+        .responsibility { list-style: none; margin-top: 5px; }
+        .responsibility li { font-size: 11.5px; margin-bottom: 3px; position: relative; padding-left: 12px; }
+        .responsibility li::before { content: "•"; position: absolute; left: 0; color: #3498db; font-weight: bold; }
+
+        .acquired-skills { font-size: 10.5px; color: #27ae60; font-weight: 600; margin-top: 5px; padding-left: 12px; font-style: italic; }
+
+        @media print {
+            body { padding: 0; background: none; }
+            .cv-container { box-shadow: none; margin: 0; width: 100%; }
+            .sidebar { -webkit-print-color-adjust: exact; background-color: #2c3e50 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <div class="sidebar">
+        <img src="unnamed.png" style="width: 100%;" alt="" srcset="">
+        <h1>PHUNG HUU LONG</h1>
+        <h2>Senior AI Engineer / Fullstack</h2>
+        
+        <div class="side-section">
+            <div class="side-title">Thông tin cá nhân</div>
+            <div class="info-item">Email: phunglongtn@gmail.com</div>
+            <div class="info-item">Phone 0375769686</div>
+            <div class="info-item">Address: Nguyễn Xiển, Hà Nội</div>
+            <div class="info-item">English: IELTS 6.5</div>
+        </div>
+
+        <div class="side-section">
+            <div class="side-title">Học vấn</div>
+            <div class="info-item"><strong>2025: Thạc sĩ AI</strong><br>University of Ulsan, Korea</div>
+            <div class="info-item" style="margin-top: 5px;"><strong>2022: Cử nhân CNTT</strong><br>Hanoi Univ. of Business & Tech</div>
+        </div>
+
+        <div class="side-section">
+            <div class="side-title">Kỹ năng chuyên gia</div>
+            <div class="skill-group"><div class="skill-name">Python / ML<span>Senior</span></div><div class="level-bar"><div class="level-fill" style="width: 95%"></div></div></div>
+            <div class="skill-group"><div class="skill-name">Computer Vision<span>Senior</span></div><div class="level-bar"><div class="level-fill" style="width: 95%"></div></div></div>
+            <div class="skill-group"><div class="skill-name">Spark / Big Data<span>Senior</span></div><div class="level-bar"><div class="level-fill" style="width: 90%"></div></div></div>
+            <div class="skill-group"><div class="skill-name">FastAPI / MLOps<span>Senior</span></div><div class="level-bar"><div class="level-fill" style="width: 85%"></div></div></div>
+            <div class="skill-group"><div class="skill-name">SQL / Pandas<span>Senior</span></div><div class="level-bar"><div class="level-fill" style="width: 90%"></div></div></div>
+        </div>
+
+        <div class="side-section">
+            <div class="side-title">Kỹ năng khác</div>
+            <div class="info-item">Gen AI / LLM / RAG</div>
+            <div class="info-item">Docker / K3s / CI-CD</div>
+            <div class="info-item">React / Next.js / Node.js</div>
+            <div class="info-item">Java Spring Boot</div>
+            <div class="info-item">Laravel</div>
+            <div class="info-item">Django</div>
+            <div class="info-item">MongoDB / PostgreSQL</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section class="main-section">
+            <div class="section-header">Giới thiệu & Mục tiêu (Self-PR)</div>
+            <p class="summary">
+                Tôi là một Fullstack Data Scientist chuyên xây dựng các hệ thống trí tuệ nhân tạo quy mô sản phẩm (production-ready). Có nền tảng vững chắc về Machine Learning, Deep Learning và các thuật toán tối ưu hóa. Đã từng làm việc tại MB BANK, Vietcombank (Hà Nội) và HTWAVE Technology (Hàn Quốc). Hiện tôi đang tìm kiếm vị trí <b>Giảng viên Python/ Data Science/ AI bán thời gian</b> để chia sẻ kiến thức thực chiến từ các dự án Big Data, Computer Vision và xử lý hệ thống quy mô hàng triệu bản ghi cho học viên.
+            </p>
+        </section>
+
+        <section class="main-section">
+            <div class="section-header">Kinh nghiệm dự án (Chi tiết 100%)</div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>1. House Price Prediction System</span><span>01/2026 - Nay</span></div>
+                <div class="project-sub">Công ty: VIETCOMBANK | Team: 8 | Vai trò: Senior Data Scientist</div>
+                <div class="tech-box">Python - FastAPI - PySpark - Oracle - AWS S3 - Airflow</div>
+                <ul class="responsibility">
+                    <li>Xây dựng hệ thống dự báo giá nhà quy mô lớn sử dụng xử lý dữ liệu phân tán (Spark) và lưu trữ AWS S3/Oracle.</li>
+                    <li>Thiết kế ETL pipelines thu thập và tiền xử lý dữ liệu BĐS (vị trí, diện tích, lịch sử giá...) đạt hàng chục triệu bản ghi/ngày.</li>
+                    <li>Phát triển mô hình XGBOOST với Feature Engineering nâng cao (Location encoding, Neighborhood features).</li>
+                    <li>Xây dựng RESTful APIs bằng FastAPI phục vụ dự báo thời gian thực cho Web/Mobile.</li>
+                    <li>Vận hành Airflow để lập lịch tự động: Ingestion, Feature Engineering, Retraining và Versioning mô hình.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>2. Early Risk Detection System</span><span>07/2025 - 01/2026</span></div>
+                <div class="project-sub">Công ty: MB BANK | Team: 8 | Vai trò: Senior Data Scientist</div>
+                <div class="tech-box">Python - FastAPI - PySpark - LightGBM - S3 - Airflow</div>
+                <ul class="responsibility">
+                    <li>Xây dựng dịch vụ tính điểm rủi ro từ Database ngân hàng lớn. Đạt tốc độ xử lý **100.000.000 truy vấn trong 8 giờ** nhờ tối ưu Spark và S3.</li>
+                    <li>Sử dụng Airflow lập lịch tính toán 100 triệu truy vấn mỗi ngày.</li>
+                    <li>Huấn luyện mô hình rủi ro tín dụng (Credit Risk) bằng LightGBM trên dữ liệu giao dịch quy mô lớn.</li>
+                    <li>Tích hợp mô hình vào FastAPI phục vụ API chấm điểm rủi ro thời gian thực.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>3. Gen AI Agent for Policies & Regulations</span><span>07/2025 - 01/2026</span></div>
+                <div class="project-sub">Công ty: MB BANK | Team: 5 | Vai trò: Senior Data Scientist</div>
+                <div class="tech-box">RAG - LLM - K3s - MongoDB - Milvus - Triton Server - FastAPI</div>
+                <ul class="responsibility">
+                    <li>Thiết kế hệ thống AI Agent nội bộ dựa trên kiến trúc RAG hỗ trợ tra cứu chính sách ngân hàng.</li>
+                    <li>Triển khai hạ tầng K3s tích hợp MinIO, Milvus và Nvidia Triton Inference Server.</li>
+                    <li>Xây dựng trọn bộ module: Chunking, Embedding, Retrieval và QA.</li>
+                    <li>Hệ thống đạt **2,000+ queries/ngày** với thời gian phản hồi trung bình **~800ms**.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>4. Wind Prediction (IoT Project)</span><span>10/2023 - 07/2024</span></div>
+                <div class="project-sub">Công ty: HTWAVE (Hàn Quốc) | Team: 6 | Vai trò: Senior Data Scientist</div>
+                <div class="tech-box">Java Spring Boot - FastAPI - WebSocket - LSTM - ARIMA - MySQL</div>
+                <ul class="responsibility">
+                    <li>Xây dựng hệ thống dự báo hướng/tốc độ gió sử dụng công nghệ LORA.</li>
+                    <li>Tối ưu luồng xử lý hơn **1 triệu bản ghi/ngày**, tăng tốc độ xử lý lên **90%** đo lường bằng FPS.</li>
+                    <li>Sử dụng mô hình LSTM và ARIMA để dự báo chuỗi thời gian cho dữ liệu gió.</li>
+                    <li>Triển khai Dashboard và API giám sát dữ liệu thời gian thực trên Ubuntu/Nginx.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>5. Manufacturing Execution System (MES)</span><span>07/2022 - 09/2023</span></div>
+                <div class="project-sub">Công ty: TOSY ROBOTICS | Team: 6 | Vai trò: Data Scientist</div>
+                <div class="tech-box">Django - Spark Streaming - Scala - MQTT - YOLOv5</div>
+                <ul class="responsibility">
+                    <li>Phát triển hệ thống MES xử lý dữ liệu sản xuất thời gian thực bằng Apache Spark.</li>
+                    <li>Viết pipeline Spark Structured Streaming từ MQTT/Kafka để phân tích log kỹ thuật viên và phát hiện sai lệch.</li>
+                    <li>Áp dụng YOLO vào ứng dụng MES để tối ưu hóa giám sát quy trình sản xuất qua camera.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>6. OCR Document Ecosystem (Finance/Vehicle)</span><span>07/2025 - 01/2026</span></div>
+                <div class="project-sub">Công ty: MB BANK | Vai trò: Data Scientist</div>
+                <div class="tech-box">YOLO - VietOCR - SRFormer - PARSeq - FastAPI - Airflow</div>
+                <ul class="responsibility">
+                    <li>**Tài chính:** Trích xuất dữ liệu Séc, Lệnh chi. Độ chính xác: 95% (in), 80% (viết tay). Giảm 80% khối lượng nhập liệu.</li>
+                    <li>**Xe cộ:** Sử dụng YOLO template separation, SRFormer phát hiện text và PARSeq nhận diện. Độ chính xác 98%, xử lý 3s/request.</li>
+                    <li>Sử dụng Airflow lập lịch trích xuất dữ liệu từ PDF/Excel hàng ngày.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>7. Smart Detection (Fire/Parking/Falling)</span><span>09/2023 - 05/2025</span></div>
+                <div class="project-sub">Công ty: HTWAVE (Hàn Quốc) | Vai trò: Data Scientist</div>
+                <div class="tech-box">YOLOv5 - TensorRT - ONNX Runtime - Docker - Quantization</div>
+                <ul class="responsibility">
+                    <li>Tối ưu YOLOv5 (GhostNet, CBAM, Inception, BiFPN) giúp tăng mAP thêm 3.2% và giảm 7.14% tham số.</li>
+                    <li>Hệ thống bãi đỗ xe đạt 99.6% mAP, giảm 58.57% tham số, inference time chỉ 2.1ms.</li>
+                    <li>Triển khai **INT8 Quantization** cho edge devices, giảm size model từ 13.2MB xuống 3.5MB.</li>
+                    <li>Chuyển đổi sang TensorRT FP16 giúp tăng tốc độ inference lên 60%.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta"><span>8. Robot Mimics Human Actions</span><span>2020 - 2022</span></div>
+                <div class="project-sub">Công ty: TOSY ROBOTICS | Team: 7 | Vai trò: Data Scientist</div>
+                <div class="tech-box">ROS2 - YOLOv5 - Robotis-OP3 - Django - WebSocket</div>
+                <ul class="responsibility">
+                    <li>Phát triển hệ thống nhận diện vật thể thời gian thực bằng YOLOv5 tích hợp vào ROS2.</li>
+                    <li>Điều khiển Robot OP3 thực hiện các hành động gắp, giữ và thao tác vật thể mô phỏng theo cử chỉ người.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
